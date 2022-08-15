@@ -10,8 +10,8 @@
     "lint": "next lint",
     "lint:fix": "npx eslint --fix .",
     "format": "prettier --write .",
-    "validate": "npm run format && npm run lint",
-    "prepare": "husky install"
+    "validate": "npm run format && npx lint-staged",
+    "prepare": "husky"
   },
   "dependencies": {
     "next": "12.2.5",
